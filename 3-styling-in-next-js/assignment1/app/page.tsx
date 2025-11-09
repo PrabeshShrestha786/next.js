@@ -1,12 +1,19 @@
+"use client";
+
 import Title from "./components/Title";
+import Button from "./components/Button";
 
 export default function HomePage() {
+  const handleClick = () => {
+    alert("Button clicked!");
+  };
+
   return (
-    <main>
+    <main style={{ textAlign: "center", marginTop: "50px" }}>
       <Title />
-      <p style={{ textAlign: 'center' }}>
-        This is a sample app showing how to use CSS Modules in Next.js.
-      </p>
+      <p>This is the home page demonstrating a styled button component.</p>
+
+      <Button label="Click Me" onClick={handleClick} />
     </main>
   );
 }

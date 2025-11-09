@@ -1,0 +1,19 @@
+/* components/Button.module.css */
+
+.button {
+  background-color: #0070f3;     /* Next.js blue */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: #0059c9;
+  transform: scale(1.05);
+}
