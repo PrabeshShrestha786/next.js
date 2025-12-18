@@ -1,0 +1,39 @@
+/* app/components/ProfileCard.module.css */
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  margin: 24px auto;
+  padding: 18px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.info {
+  text-align: left;
+}
+
+.footer {
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

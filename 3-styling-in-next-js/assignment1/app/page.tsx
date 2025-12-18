@@ -5,6 +5,7 @@ import Button from "./components/Button";
 import Card from "./components/Card";
 import AppLayout from "./components/AppLayout";
 import Alert from "./components/Alert";
+import ProfileCard from "./components/ProfileCard";
 
 export default function HomePage() {
   const handleClick = () => {
@@ -23,6 +24,23 @@ export default function HomePage() {
         <Alert
           title="Tailwind Ready ✅"
           message="This alert is styled using Tailwind utility classes."
+        />
+
+        {/* Task 7: ProfileCard combining styles */}
+        <ProfileCard
+          name="Alice Johnson"
+          role="UI Designer"
+          email="alice@demo.com"
+          accentColor="#7c3aed"
+          status="active"
+        />
+
+        <ProfileCard
+          name="Mark Smith"
+          role="Backend Developer"
+          email="mark@demo.com"
+          accentColor="#0f766e"
+          status="pending"
         />
 
         {/* Task 4: Inline Styled Cards */}
