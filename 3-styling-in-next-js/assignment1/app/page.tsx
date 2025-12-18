@@ -4,6 +4,7 @@ import Title from "./components/Title";
 import Button from "./components/Button";
 import Card from "./components/Card";
 import AppLayout from "./components/AppLayout";
+import Alert from "./components/Alert";
 
 export default function HomePage() {
   const handleClick = () => {
@@ -17,6 +18,12 @@ export default function HomePage() {
         <p>This is the home page demonstrating a styled button component.</p>
 
         <Button label="Click Me" onClick={handleClick} />
+
+        {/* Task 6: Tailwind Alert */}
+        <Alert
+          title="Tailwind Ready ✅"
+          message="This alert is styled using Tailwind utility classes."
+        />
 
         {/* Task 4: Inline Styled Cards */}
         <div style={{ marginTop: "30px" }}>
